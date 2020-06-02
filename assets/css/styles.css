@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  display: flex;
+}
+.hide {
+  display: none;
+}
+.opening {
+  height: 800px;
+  margin: auto;
+  position: flex;
+  transition: transform 2s;
+}
+.frame {
+  margin: auto;
+  height: 800px;
+  width: 366px;
+  background-image: url('../images/woodDoorFrame.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.doorContainer {
+  height: 711px;
+  width: 300px;
+  margin: auto;
+}
+.door {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/woodDoor.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform-origin: left;
+  transition: 2s;
+}
+.flip {
+  transform: rotateY(-125deg);
+}
+.zoom {
+  transform: scale(8);
+}
+.forest {
+  height: 800px;
+  width: 1250px;
+  max-width: 1250px;
+  background-image: url('../images/forest.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.opacityIn {
+  animation: fadeIn 2s forwards;
+  transition: 1s linear all;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.startModal {
+  width: 909px;
+  height: 509px;
+  position: absolute;
+  margin: 12%;
+  background-color: rgba(0, 128, 0, 0.5);
+  border-radius: 20px;
+  box-shadow: 10px 10px yellowgreen;
+  z-index: 2;
+}
+.startModalText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 30px 0;
+}
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  text-shadow: 3px 3px yellowgreen;
+}
+.startModalText div {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 35px;
+  text-shadow: 2px 2px yellowgreen;
+  margin: 10px 0;
+}
+.difficultyButtons {
+  display: flex;
+}
+.modalButton,
+.inputButton,
+.gameButton {
+  background-color: green;
+  font-size: 20px;
+  text-shadow: 1px 1px yellowgreen;
+  padding: 10px 40px;
+  border-radius: 5px;
+  box-shadow: 2px 2px yellowgreen;
+}
+.modalButton:hover,
+.inputButton:hover,
+.gameButton:hover {
+  background-color: yellowgreen;
+  text-shadow: 1px 1px green;
+  box-shadow: 2px 2px rgb(1, 71, 1);
+}
+.inputButton {
+  margin-top: 20px;
+}
+.game {
+  width: 909px;
+  height: 509px;
+  position: absolute;
+  margin: 12%;
+  background-color: rgba(0, 128, 0, 0.5);
+  border-radius: 20px;
+  box-shadow: 10px 10px yellowgreen;
+  z-index: 2;
+}
+.gameBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gameBoard h1 {
+  /* margin: auto; */
+  margin: 20px auto;
+}
+.guessInput {
+  font-family: 'Quattrocento Sans', sans-serif;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  font-size: 70px;
+  text-shadow: 1px 1px green;
+  background-color: yellowgreen;
+}
+.guessResponse {
+  font-family: 'Quattrocento Sans', sans-serif;
+  margin: 30px 60px 10px 60px;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 1px 1px yellowgreen;
+}
+.gameButtons {
+  width: 50%;
+  text-align: center;
+}

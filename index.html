@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Quattrocento+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="assets/script/main.js"></script>
+  <title>Guessing Game</title>
+</head>
+<body>
+  <div class="startModal hide">
+    <div class="startModalText">
+      <h1>Welcome to the Magical Forest<br>of Geh Seeng</h1>
+      <div>You need to guess the correct number to get out.</div>
+      <div>Choose a difficulty:</div>
+      <div class="difficultyButtons">
+        <button id="easyButton" class="modalButton">Easy</button>
+        <button id="mediumButton" class="modalButton">Medium</button>
+        <button id="hardButton" class="modalButton">Hard</button>
+        <button id="impossibleButton" class="modalButton">Impossible</button>
+      </div>
+    </div>
+  </div>
+  <div class="game hide">
+    <div class="gameBoard">
+      <h1>Choose a number between 1 and <span id="maxNumSpan"></span>.</h1>
+      <input class="guessInput" id="guessInput"><button class="inputButton" type="button">Guess</button>
+      <div class="guessResponse"></div>
+      <div class="gameButtons hide">
+        <button class="gameButton hide" id="playAgain">Play Again</button>
+        <button class="gameButton hide" id="leave">Leave Forest</button>
+      </div>
+    </div>
+  </div>
+  <div class="opening">
+    <div class="frame">
+      <div class="doorContainer">
+        <div class="door"></div>
+      </div>
+    </div>
+  </div>
+  <div class="forest hide"></div>
+</body>
+</html>
